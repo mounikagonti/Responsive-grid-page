@@ -1,0 +1,144 @@
+.container {
+  padding: 40px;
+  .header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    @include mQ($md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mQ($sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card_One,
+    .card_Two,
+    .card_Three,
+    .card_Four {
+      padding: 10px;
+      background-color: #ffff;
+      color: rgb(125, 122, 122);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: bold;
+
+      &:hover {
+        background-color: black;
+        color: #ffff;
+      }
+    }
+  }
+
+  .banner {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    @include mQ($md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner_left {
+      grid-column: 1/4;
+      grid-row: 1/2;
+      .card_Five {
+        height: 100%;
+      }
+    }
+    .banner_right {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+
+      @include mQ($md) {
+        grid-column: 1/4;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include mQ($sm) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card_Five,
+    .card_Six,
+    .card_Seven {
+      padding: 10px;
+      background-color: #ffff;
+      color: rgb(125, 122, 122);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      text-align: center;
+      button {
+        padding: 8px 15px;
+        font-size: bold;
+        color: #ffff;
+        background-color: black;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 3px;
+        &:hover {
+          background-color: gray;
+        }
+      }
+    }
+    .card_Five {
+      grid-column: 1/4;
+      grid-row: 1/3;
+      background-image: url("/images/img1.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .content {
+        margin-top: 120px;
+        padding: 10px;
+        h1 {
+          color: #ffff;
+        }
+        p {
+          color: #817c7c;
+        }
+        button {
+          padding: 8px 15px;
+          font-size: bold;
+          color: black;
+          background-color: #ffff;
+          border: none;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          border-radius: 3px;
+          &:hover {
+            background-color: gray;
+            color: #ffff;
+          }
+        }
+      }
+    }
+  }
+  .services {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    @include mQ($md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mQ($sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .cards {
+      .icon {
+        color: black;
+      }
+    }
+    .card_Eight,
+    .card_Nine,
+    .card_Ten,
+    .card_Eleven {
+      padding: 10px;
+      background-color: #ffff;
+      color: rgb(125, 122, 122);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      text-align: center;
+    }
+  }
+}

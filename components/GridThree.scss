@@ -1,0 +1,93 @@
+.gridThree_wrapper {
+  padding: 40px;
+  .first_row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    @include mQ($md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mQ($sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .cards {
+      background-color: rgb(198, 13, 13);
+      color: rgb(125, 122, 122);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      height: 200px;
+    }
+    .card_One {
+      background-image: url("/images/image1.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .card_Two {
+      background-image: url("/images/image2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .card_Three {
+      background-image: url("/images/image3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .card_Four {
+      background-image: url("/images/image4.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .card_Five {
+      background-image: url("/images/image5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .card_Six {
+      background-image: url("/images/image6.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .second_row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    @include mQ($md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mQ($sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .cards {
+      background-color: rgb(198, 13, 13);
+      color: rgb(248, 246, 247);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      height: 200px;
+    }
+    .card_Seven {
+      background-image: url("/images/image7.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .card_Eight {
+      background-image: url("/images/image8.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .card_Nine {
+      background-image: url("/images/image9.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+.gridTwo_wrapper {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  .card_One {
+    padding: 40px;
+    background-color: #ffff;
+    color: rgb(125, 122, 122);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    @include mQ($md) {
+      flex-wrap: wrap;
+    }
+    .content {
+      margin-left: 20px;
+      button {
+        padding: 8px 15px;
+        font-size: bold;
+        color: #ffff;
+        background-color: black;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 3px;
+        &:hover{
+          background-color: gray;
+        }
+      }
+    }
+  }
+}
